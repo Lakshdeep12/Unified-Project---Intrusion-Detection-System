@@ -1,0 +1,5 @@
+MODEL_PATH = r"D:\Unfied Project-1\Models"
+DATASET_PATH = r"D:\Unfied Project-1\DataSet\Raw DataSet"
+SCALER_PATH = r"D:\Unfied Project-1\Models\Scaler"
+RANDOM_FOREST_PATH = r"D:\Unfied Project-1\Models\Supervisedrf"
+UNSUPERVISED_MODEL_PATH = r"D:\Unfied Project-1\Models\Unsupervised"
