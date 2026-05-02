@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/_app.index.tsx"
+status = 200
