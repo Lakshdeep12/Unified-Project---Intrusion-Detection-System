@@ -31,3 +31,16 @@ services:
 
 volumes:
   backend_data:
+# Copy package files and install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy the rest of your code and build
+COPY . .
+RUN npm run build
+
+# 1. The Build Command equivalent
+RUN npm install && npm run build
+
+# 2. The Start Command equivalent
+CMD ["npm", "run", "start"]
