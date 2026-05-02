@@ -11,5 +11,8 @@ export default defineConfig({
     build: {
       chunkSizeWarningLimit: 1000,
     },
+    preview: {
+      allowedHosts: ["intrusense-78ai.onrender.com"],
+    },
   },
 });
