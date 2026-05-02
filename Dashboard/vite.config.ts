@@ -6,13 +6,18 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+const allowedHosts = ["intrusense-78ai.onrender.com"];
+
 export default defineConfig({
   vite: {
     build: {
       chunkSizeWarningLimit: 1000,
     },
+    server: {
+      allowedHosts,
+    },
     preview: {
-      allowedHosts: ["intrusense-78ai.onrender.com"],
+      allowedHosts,
     },
   },
 });
