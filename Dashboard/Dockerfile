@@ -10,8 +10,8 @@ COPY . .
 # Build application
 RUN npm run build
 
-# Expose port
-EXPOSE 5173
+# Expose default Nitro port. Render will provide PORT at runtime.
+EXPOSE 3000
 
-# Start preview server
-CMD ["npm", "run", "preview", "--", "--host", "0.0.0.0", "--port", "5173"]
+# Start production server
+CMD ["npm", "run", "start"]
